@@ -1,0 +1,117 @@
+HTML The id Attribute
+The HTML id attribute is used to specify a unique id for an HTML element (the value must be unique within the HTML document).
+
+Using The id Attribute
+The id attribute is used by CSS or JavaScript to perform certain tasks for the element with the specific id value.
+
+In CSS, to select an element with a specific id, write a hash (#) character, followed by the id of the element:
+
+Example
+Use CSS to style an element with the id "myHeader":
+
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+</style>
+
+<h1 id="myHeader">My Header</h1>
+Result:
+
+My Header
+Tip: The id attribute can be used on any HTML element.
+
+Note: The id value is case-sensitive.
+
+Note: The id value must contain at least one character, and must not contain whitespace (spaces, tabs, etc.).
+
+Difference Between Class and ID
+An HTML element can only have one unique id that belongs to that single element, while a class name can be used by multiple elements:
+
+Example
+<style>
+/* Style the element with the id "myHeader" */
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Style all elements with the class name "city" */
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+</style>
+
+<!-- A unique element -->
+<h1 id="myHeader">My Cities</h1>
+
+<!-- Multiple similar elements -->
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+Tip: You can learn much more about CSS in our CSS Tutorial.
+
+Bookmarks with ID and Links
+HTML bookmarks are used to allow readers to jump to specific parts of a Web page.
+
+Bookmarks can be useful if your webpage is very long.
+
+To make a bookmark, you must first create the bookmark, and then add a link to it.
+
+When the link is clicked, the page will scroll to the location with the bookmark.
+
+Example
+First, create a bookmark with the id attribute:
+
+<h2 id="C4">Chapter 4</h2>
+Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:
+
+<a href="#C4">Jump to Chapter 4</a>
+Or, add a link to the bookmark ("Jump to Chapter 4"), from another page:
+
+Example
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+Using The id Attribute in JavaScript
+JavaScript can access an element with a specified id by using the getElementById() method:
+
+Example
+Use the id attribute to manipulate text with JavaScript:
+
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
+Tip: Study JavaScript in the HTML JavaScript chapter, or in our JavaScript Tutorial.
+
+HTML Exercises
+Test Yourself With Exercises
+Exercise:
+Add the correct HTML attribute to make the H1 element red.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myheader {color:red;}
+</style>
+</head>
+<body>
+
+<h1 
+>My Home Page</h1>
+
+</body>
+</html>
