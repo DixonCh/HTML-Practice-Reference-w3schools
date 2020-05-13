@@ -1,7 +1,9 @@
-HTML Tables
+HTML Tables:
+
 HTML tables allow web authors to arrange data into rows and columns.
 
-Example
+Example:
+
 Company	Contact	Country
 Alfreds Futterkiste	Maria Anders	Germany
 Centro comercial Moctezuma	Francisco Chang	Mexico
@@ -9,12 +11,16 @@ Ernst Handel	Roland Mendel	Austria
 Island Trading	Helen Bennett	UK
 Laughing Bacchus Winecellars	Yoshi Tannamuri	Canada
 Magazzini Alimentari Riuniti	Giovanni Rovelli	Italy
-Defining an HTML Table
+
+Defining an HTML Table:
+
 An HTML table is defined with the <table> tag.
 
-Each table row is defined with the <tr> tag. A table header is defined with the <th> tag. By default, table headings are bold and centered. A table data/cell is defined with the <td> tag.
+Each table row is defined with the <tr> tag. A table header is defined with the <th> tag. By default, table headings are bold and 
+centered. A table data/cell is defined with the <td> tag.
 
-Example
+Example:
+  
 <table style="width:100%">
   <tr>
     <th>Firstname</th>
@@ -32,63 +38,81 @@ Example
     <td>94</td>
   </tr>
 </table>
+  
 Note: The <td> elements are the data containers of the table.
 They can contain all sorts of HTML elements; text, images, lists, other tables, etc.
 
-HTML Table - Adding a Border
+HTML Table - Adding a Border:
+  
 If you do not specify a border for the table, it will be displayed without borders.
 
 A border is set using the CSS border property:
 
-Example
+Example:
+  
 table, th, td {
   border: 1px solid black;
 }
+  
 Remember to define borders for both the table and the table cells.
 
-HTML Table - Collapsed Borders
+HTML Table - Collapsed Borders:
+  
 If you want the borders to collapse into one border, add the CSS border-collapse property:
 
-Example
+Example:
+  
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
-HTML Table - Adding Cell Padding
+  
+HTML Table - Adding Cell Padding:
+  
 Cell padding specifies the space between the cell content and its borders.
 
 If you do not specify a padding, the table cells will be displayed without padding.
 
 To set the padding, use the CSS padding property:
 
-Example
+Example:
+  
 th, td {
   padding: 15px;
 }
-HTML Table - Left-align Headings
+  
+HTML Table - Left-align Headings:
+  
 By default, table headings are bold and centered.
 
 To left-align the table headings, use the CSS text-align property:
 
-Example
+Example:
+  
 th {
   text-align: left;
 }
-HTML Table - Adding Border Spacing
+  
+HTML Table - Adding Border Spacing:
+  
 Border spacing specifies the space between the cells.
 
 To set the border spacing for a table, use the CSS border-spacing property:
 
-Example
+Example:
+  
 table {
   border-spacing: 5px;
 }
+  
 Note: If the table has collapsed borders, border-spacing has no effect.
 
-HTML Table - Cells that Span Many Columns
+HTML Table - Cells that Span Many Columns:
+  
 To make a cell span more than one column, use the colspan attribute:
 
-Example
+Example:
+  
 <table style="width:100%">
   <tr>
     <th>Name</th>
@@ -100,10 +124,13 @@ Example
     <td>55577855</td>
   </tr>
 </table>
-HTML Table - Cells that Span Many Rows
+  
+HTML Table - Cells that Span Many Rows:
+  
 To make a cell span more than one row, use the rowspan attribute:
 
-Example
+Example:
+  
 <table style="width:100%">
   <tr>
     <th>Name:</th>
@@ -117,10 +144,13 @@ Example
     <td>55577855</td>
   </tr>
 </table>
-HTML Table - Adding a Caption
+  
+HTML Table - Adding a Caption:
+  
 To add a caption to a table, use the <caption> tag:
 
-Example
+Example:
+  
 <table style="width:100%">
   <caption>Monthly savings</caption>
   <tr>
@@ -136,12 +166,15 @@ Example
     <td>$50</td>
   </tr>
 </table>
+  
 Note: The <caption> tag must be inserted immediately after the <table> tag.
 
-A Special Style for One Table
+A Special Style for One Table:
+  
 To define a special style for a special table, add an id attribute to the table:
 
-Example
+Example:
+  
 <table id="t01">
   <tr>
     <th>Firstname</th>
@@ -154,12 +187,16 @@ Example
     <td>94</td>
   </tr>
 </table>
+  
 Now you can define a special style for this table:
+  
 table#t01 {
   width: 100%;
   background-color: #f1f1c1;
 }
+  
 And add more styles:
+  
 table#t01 tr:nth-child(even) {
   background-color: #eee;
 }
@@ -170,7 +207,9 @@ table#t01 th {
   color: white;
   background-color: black;
 }
-Chapter Summary
+  
+Chapter Summary:
+  
 Use the HTML <table> element to define a table
 Use the HTML <tr> element to define a table row
 Use the HTML <td> element to define a table data
@@ -183,40 +222,19 @@ Use the CSS text-align property to align cell text
 Use the CSS border-spacing property to set the spacing between cells
 Use the colspan attribute to make a cell span many columns
 Use the rowspan attribute to make a cell span many rows
-Use the id attribute to uniquely define one table
-HTML Exercises
-Test Yourself With Exercises
-Exercise:
-Add a table row with two table headers.
+Use the id attribute to uniquely define one table  
 
-The two table headers should have the value "Name" and "Age".
-
-<table>
-  
-
-    
-
-    
-
-  
-
-  <tr>
-    <td>Jill Smith</td>
-    <td>50</td>
-  </tr>
-</table>
-
-Start the Exercise
-
-HTML Table Tags
-Tag	Description
-<table>	Defines a table
-<th>	Defines a header cell in a table
-<tr>	Defines a row in a table
-<td>	Defines a cell in a table
-<caption>	Defines a table caption
+HTML Table Tags:
+**********************************************************************************  
+Tag	        Description:
+**********************************************************************************  
+<table>	    Defines a table
+ <th>	      Defines a header cell in a table
+ <tr>	      Defines a row in a table
+ <td>	      Defines a cell in a table
+<caption>	  Defines a table caption
 <colgroup>	Specifies a group of one or more columns in a table for formatting
-<col>	Specifies column properties for each column within a <colgroup> element
-<thead>	Groups the header content in a table
-<tbody>	Groups the body content in a table
-<tfoot>	Groups the footer content in a table
+<col>	      Specifies column properties for each column within a <colgroup> element
+<thead>	    Groups the header content in a table
+<tbody>	    Groups the body content in a table
+<tfoot>	    Groups the footer content in a table
