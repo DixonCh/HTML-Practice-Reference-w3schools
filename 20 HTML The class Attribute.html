@@ -1,12 +1,15 @@
-HTML The class Attribute
+HTML The class Attribute:
+
 The HTML class attribute is used to define equal styles for elements with the same class name.
 
-Using The class Attribute
+Using The class Attribute:
+
 All HTML elements with the same class attribute will get the same style.
 
 Here we have three <div> elements that point to the same class name:
 
-Example
+Example:
+  
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,6 +41,7 @@ Example
 
 </body>
 </html>
+  
 Result:
 
 London
@@ -52,7 +56,8 @@ Tokyo is the capital of Japan.
 Using The class Attribute on Inline Elements
 The HTML class attribute can also be used on inline elements:
 
-Example
+Example:
+  
 <!DOCTYPE html>
 <html>
 <head>
@@ -109,10 +114,12 @@ Paris is the capital of France.
 Tokyo
 Tokyo is the capital of Japan.
 
-Multiple Classes
+Multiple Classes:
+  
 HTML elements can have more than one class name, each class name must be separated by a space.
 
-Example
+Example:
+  
 Style elements with the class name "city", also style elements with the class name "main":
 
 <h2 class="city main">London</h2>
@@ -120,10 +127,12 @@ Style elements with the class name "city", also style elements with the class na
 <h2 class="city">Tokyo</h2>
 In the example above, the first <h2> element belongs to both the "city" class and the "main" class.
 
-Different Tags Can Share Same Class
+Different Tags Can Share Same Class:
+  
 Different tags, like <h2> and <p>, can have the same class name and thereby share the same style:
 
-Example
+Example:
+  
 <h2 class="city">Paris</h2>
 <p class="city">Paris is the capital of France</p>
 Using The class Attribute in JavaScript
@@ -131,7 +140,8 @@ The class name can also be used by JavaScript to perform certain tasks for eleme
 
 JavaScript can access elements with a specified class name by using the getElementsByClassName() method:
 
-Example
+Example:
+  
 When a user clicks on a button, hide all elements with the class name "city":
 
 <script>
@@ -142,31 +152,3 @@ function myFunction() {
   }
 }
 </script>
-Don't worry if you don't understand the code in the example above.
-
-You will learn more about JavaScript in our HTML JavaScript chapter, or you can study our JavaScript Tutorial.
-
-HTML Exercises
-Test Yourself With Exercises
-Exercise:
-Create a class selector named "special".
-
-Add a color property with the value "blue" inside the "special" class.
-
-<!DOCTYPE html>
-<html>
-<head>
-<style>
- 
-
-  
-;
-
-</style>
-</head>
-<body>
-
-<p class="special">My paragraph</p>
-
-</body>
-</html>
